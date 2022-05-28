@@ -25,23 +25,31 @@ The additional task is also expected to be added to the vote count report.
 In order to complete the objectives of the election audit, the following script was built:
 
 * Added dependencies csv and os to read/write .csv and txt files and get their paths 
+
 	import csv
 	import os
 * Added two variables, one to load a file from a path and another to save the file to a path 
+
 	file_to_load = os.path.join("Resources", "election_results.csv")
 	file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 * For the total votes casted in the congressional election:
 	*The variable total_votes counter was initialized to 0
+	
 		total_votes = 0
+		
 	*The data set in the csv file is open and read with the following code
+	
 		with open(file_to_load) as election_data:
     			reader = csv.reader(election_data)
-	*For loop was created in order to go through each row and add the total vote count. 
+			
+	*For loop was created in order to go through each row and add the total vote count
+	
 			for row in reader:
  				total_votes = total_votes + 1
 	
 The results showed that the total votes casted were 369,711
+
 
 
 * The number of votes and percentage of total votes for each county was estimated as follows:
