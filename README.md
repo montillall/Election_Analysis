@@ -51,7 +51,7 @@ In order to complete the objectives of the election audit, the following script 
 	
 The results showed that the total votes casted were 369,711
 
-![](Total_Votes.png)
+![](Images/Total_Votes.png)
 
 * The number of votes and percentage of total votes for each county was estimated as follows:
 
