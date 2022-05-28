@@ -50,9 +50,10 @@ In order to complete the objectives of the election audit, the following script 
 	
 The results showed that the total votes casted were 369,711
 
-
+![](Total_Votes.png)
 
 * The number of votes and percentage of total votes for each county was estimated as follows:
+
 	*A county list and a county dictionary were created
   
 		county_options = []
@@ -73,6 +74,7 @@ The results showed that the total votes casted were 369,711
 
 The breakdown of the number of votes and the percentage of total votes for each county is shown in image below:
 
+![](County_Votes.png)
 
 * The county with the largest amount of votes was determine using an if statement:
 
@@ -81,7 +83,8 @@ The breakdown of the number of votes and the percentage of total votes for each 
             	winning_county = county_name
 
 The largest county turnout was Denver, see image below:
- 
+
+![](Largest_County_Turnout.png)
 
 * The number of votes and percentage of total votes for each candidate received was determined using the same logic as for each county, the code is show bellow:
 
@@ -101,11 +104,12 @@ The largest county turnout was Denver, see image below:
               votes_percentage = float(votes) / float(total_votes) * 100
 
 The breakdown of the number of votes and the percentage of total votes for each candidate is shown in image below:
- 
+
+![](Candidates_Votes.png)
 
 * The candidate that won the election with its respective vote count and percentage is show below and it was determined with an if statement
  
-
+![](Winner.png)
 
 
 
