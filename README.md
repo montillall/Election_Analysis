@@ -26,24 +26,25 @@ In order to complete the objectives of the election audit, the following script 
 
 * Added dependencies csv and os to read/write .csv and txt files and get their paths 
 
-	import csv
-	import os
+		import csv
+		import os
+	
 * Added two variables, one to load a file from a path and another to save the file to a path 
 
-	file_to_load = os.path.join("Resources", "election_results.csv")
-	file_to_save = os.path.join("analysis", "election_analysis.txt")
+		file_to_load = os.path.join("Resources", "election_results.csv")
+		file_to_save = os.path.join("analysis", "election_analysis.txt")
 
 * For the total votes casted in the congressional election:
-	*The variable total_votes counter was initialized to 0
+	* The variable total_votes counter was initialized to 0
 	
-		total_votes = 0
+			total_votes = 0
 		
-	*The data set in the csv file is open and read with the following code
+	* The data set in the csv file is open and read with the following code
 	
-		with open(file_to_load) as election_data:
-    			reader = csv.reader(election_data)
+			with open(file_to_load) as election_data:
+    				reader = csv.reader(election_data)
 			
-	*For loop was created in order to go through each row and add the total vote count
+	* For loop was created in order to go through each row and add the total vote count
 	
 			for row in reader:
  				total_votes = total_votes + 1
@@ -54,19 +55,20 @@ The results showed that the total votes casted were 369,711
 
 * The number of votes and percentage of total votes for each county was estimated as follows:
 
-	*A county list and a county dictionary were created
+	* A county list and a county dictionary were created
   
-		county_options = []
-		county_votes = {}
+			county_options = []
+			county_votes = {}
     
-	*An if statement created to check if a county name doesn’t match an existing county in the county list then the county name is added to the list of counties. The county’s vote starts tracking and adding votes to that county’s vote count
+	* An if statement created to check if a county name doesn’t match an existing county in the county list then the county name is added to the list of counties. The county’s vote starts tracking and adding votes to that county’s vote count
   
-       if county_name not in county_options:
-            county_options.append(county_name)	
-      			county_votes[county_name] = 0
- 			    county_votes[county_name] += 1
+       		if county_name not in county_options:
+		
+            		county_options.append(county_name)	
+      				county_votes[county_name] = 0
+ 				county_votes[county_name] += 1
       
-	*For the percentage a for loop was created to get the county from the county dictionary. The county vote count was retrieve and the percentage of votes for the county was calculated 
+	* For the percentage a for loop was created to get the county from the county dictionary. The county vote count was retrieve and the percentage of votes for the county was calculated 
   
 		  for county_name in county_votes:
         	votescounty = county_votes.get(county_name)
