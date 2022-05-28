@@ -113,7 +113,9 @@ The breakdown of the number of votes and the percentage of total votes for each 
  
 ![](Winner.png)
 
-The results of the audit was written and saved in the election_analysis.txt file 
+The results of the audit was written and saved in the election_analysis.txt file in the analysis folder
+
+![](Results_Audit_TXT.png)
 
 
 ---
