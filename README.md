@@ -76,7 +76,7 @@ The results showed that the total votes casted were 369,711
 
 The breakdown of the number of votes and the percentage of total votes for each county is shown in image below:
 
-![](County_Votes.png)
+![](Images/County_Votes.png)
 
 * The county with the largest amount of votes was determine using an if statement:
 
@@ -86,7 +86,7 @@ The breakdown of the number of votes and the percentage of total votes for each 
 
 The largest county turnout was Denver, see image below:
 
-![](Largest_County_Turnout.png)
+![](Images/Largest_County_Turnout.png)
 
 * The number of votes and percentage of total votes for each candidate received was determined using the same logic as for each county, the code is show bellow:
 
@@ -107,22 +107,21 @@ The largest county turnout was Denver, see image below:
 
 The breakdown of the number of votes and the percentage of total votes for each candidate is shown in image below:
 
-![](Candidates_Votes.png)
+![](Images/Candidates_Votes.png)
 
 * The candidate that won the election with its respective vote count and percentage is show below and it was determined with an if statement
  
-![](Winner.png)
+![](Images/Winner.png)
 
 The results of the audit was written and saved in the election_analysis.txt file in the analysis folder
 
-![](Results_Audit_TXT.png)
+![](Images/Results_Audit_TXT.png)
 
 
 ---
 ## Election_Audit Summary
 
-* In general the advantages of refactoring is less time taken by the programmer to build a script compared to building it from scratch. It takes fewer steps, uses less memory and improves the logic of the code to make it easier for future users. Some disadvantages could be if the refactoring of the code is done on a script without enough documentation this could be time consuming.
-* On the current Stock Analysis refactoring code, there was an improvement in execution time making easier for the user to incorporate more data for future analysis.
+* One way to use this script for any other election would be to modify the script to be able to use a generic csv name as oppose to a given specific name.
 
 
 ---
