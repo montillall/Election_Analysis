@@ -116,7 +116,7 @@ The breakdown of the number of votes and the percentage of total votes for each 
 
 
 ---
-## Summary
+## Election_Audit Summary
 
 * In general the advantages of refactoring is less time taken by the programmer to build a script compared to building it from scratch. It takes fewer steps, uses less memory and improves the logic of the code to make it easier for future users. Some disadvantages could be if the refactoring of the code is done on a script without enough documentation this could be time consuming.
 * On the current Stock Analysis refactoring code, there was an improvement in execution time making easier for the user to incorporate more data for future analysis.
